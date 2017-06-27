@@ -1,0 +1,70 @@
+<div class="col-md-6">
+    <label onclick="myfaq1()">If I order shoes, apparel and accessories will they all ship together?</label>
+    <br>
+    <label onclick="myfaq2()">What can cause my order to be delayed?</label>
+    <br>
+    <label onclick="myfaq3()">How long does it take to process and ship my order?</label>
+</div>
+
+<div class="col-md-6">
+    <div id="q1" style="display:none;background-color:green">
+        If I order shoes, apparel and accessories will they all ship together?
+        <br> A: Shoes are shipped separately from apparel and accessory items as they require special handling. We offer free standard shipping on all orders. If you select expedited shipping, you will not be charged additional shipping fees on these items.
+    </div>
+    <div id="q2" style="display:none;background-color:red">
+        Q: What can cause my order to be delayed?
+        <br> A: There are several reasons why an order might be delayed. Typically, delays result from order-related data discrepancies. For instance, if the billing information you provide does not match what your bank has on file (including address and telephone number), your order may be delayed. Your order may also be delayed if the billing and shipping address are not the same.
+    </div>
+    <div id="q3" style="display:nonebackground-color:pink">
+        A: The time it takes for you to receive your order will depend on your location, the item(s) ordered, and the shipping speed you selected. All shipments take place in two stages: processing and transit. Processing Processing and packing times are estimated 24-48 hours. This excludes orders placed on the weekend. Transit Standard delivery service 2-6 business days Express delivery service 3-4 business days Overnight delivery service 1-3 business days Time frames are dependent on order date and your location.
+    </div>
+</div>
+
+<script type="text/javascript">
+    //<![CDATA[
+    function myfaq1() {
+        var x = document.getElementById('q1');
+        var y = document.getElementById('q2');
+        var z = document.getElementById('q3');
+        if (x.style.display === 'none') {
+            x.style.display = 'block';
+            y.style.display = 'none';
+            z.style.display = 'none';
+        } else {
+            x.style.display = 'none';
+            y.style.display = 'block';
+            z.style.display = 'block';
+        }
+    }
+
+    function myfaq2() {
+        var x = document.getElementById('q1');
+        var y = document.getElementById('q2');
+        var z = document.getElementById('q3');
+        if (y.style.display === 'none') {
+            x.style.display = 'none';
+            y.style.display = 'block';
+            z.style.display = 'none';
+        } else {
+            x.style.display = 'none';
+            y.style.display = 'block';
+            z.style.display = 'block';
+        }
+    }
+
+    function myfaq3() {
+        var x = document.getElementById('q1');
+        var y = document.getElementById('q2');
+        var z = document.getElementById('q3');
+        if (z.style.display === 'none') {
+            x.style.display = 'none';
+            y.style.display = 'none';
+            z.style.display = 'block';
+        } else {
+            x.style.display = 'none';
+            y.style.display = 'block';
+            z.style.display = 'block';
+        }
+    }
+    //]]>
+</script>
